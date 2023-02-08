@@ -1,4 +1,4 @@
-from funciones import area_rectangulo
-a = float(input("Ingresa el valor de la altura:"))
-b = float(input("Ingresa el valor de la base:"))
-print(area_rectangulo(a,b))
+#from funciones import area_rectangulo
+#print(area_rectangulo(3,4))
+ import funciones
+ print(funciones.area_rectangulo(3,4))
