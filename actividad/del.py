@@ -1,13 +1,8 @@
 def eliminar_usuario(
-        eli:str
+        diccio:str
     
-) -> str:
+) -> dict:
     """
-    Función que elimina usuario
     
-    --parametros--
-    -eli (str): ingresa el nombre del usuario a eliminar
-     
-    - return(eli)
     """
-eli = str(input("Ingrese su nombre:"))
+    eli = str(input("Ingrese su nombre:"))
