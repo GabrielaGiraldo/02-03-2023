@@ -1,4 +1,4 @@
-from consola import consola
-diccionario = {}
+import menu
+biblio = {}
 if __name__=="__main__":
-    consola(diccionario)
+    print(menu(y))
