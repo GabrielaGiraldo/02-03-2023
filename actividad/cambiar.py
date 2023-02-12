@@ -1,5 +1,5 @@
 def cambiar(
-    diccionario:dict
+    g:dict
 ) -> dict:
      x = str(input("Desea modificar un usuario? (si/no) "))
      x = x.lower()
@@ -8,8 +8,8 @@ def cambiar(
          ant = ant.lower()
          nom = str(input("Nombre de usuario: "))
          nom = nom.lower()
-         diccionario.pop(ant)
-         diccionario.update(nom)
+         g.pop(ant)
+         g.update(nom)
      else:
          print("No se desea cambiar ningun usuario")
 print("-"*40)

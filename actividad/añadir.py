@@ -1,5 +1,5 @@
 def añadir(
-    diccionario:dict
+    g:dict
 ) -> dict:
      x = str(input("Desea añadir un usuario? (si/no) "))
      x = x.lower()
@@ -8,7 +8,7 @@ def añadir(
          nom = nom.lower()
          lib = str(input("Añadir libro del nuevo usuario: "))
          lib = lib.lower()
-         diccionario.update({nom:lib})
+         g.update({nom:lib})
      else:
          print("No se desea añadir ningun usuario")
 print("-"*40)
