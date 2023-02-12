@@ -11,5 +11,5 @@ def cambiar(
          diccionario.pop(ant)
          diccionario.update(nom)
      else:
-         print("No se desea añadir ningun usuario")
+         print("No se desea cambiar ningun usuario")
 print("-"*40)
