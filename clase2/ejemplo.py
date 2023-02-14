@@ -1,6 +1,7 @@
 #def funcion_ejemplo(a,b,c=5):
     # En los parametros de la función a "c" se le asigna un valor "fijo" o "predeterminado" (pre)
     # Los parametros pre no pueden estar ubicados al inicio [def blabla(c=6,a,b):] <- eso estaría mal aplicado
+    # Los parametros predeterminados son modificables, es decir  se puede sobreponer otro valor al predeterminado
     #lógica
     #d = int(input("Ingrese un numero:"))
     # si se pide una variable dentro de la misma función no se tiene porque pasar por parametros.

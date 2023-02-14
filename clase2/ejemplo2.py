@@ -1,5 +1,6 @@
 lista_estudiante = ["David","Omar","Isaac"]
 lista_profe = ["Felipe"]
+lista_utencilios = ["pc","mouse"]
 def agregar(
     lista:list
     
@@ -24,3 +25,14 @@ def ver(
     if x == "si":
         print(lista)
 ver(lista_estudiante)
+print("\n")
+def juntar(
+    lista:list,
+    lista2:list,
+    c="Buenos dias Marce"
+):
+    estudiante = lista+lista2
+    estudiante.append(c)
+    print(estudiante)
+juntar(lista_profe,lista_utencilios)
+    
