@@ -1,6 +1,6 @@
 def añadir(
     dicc:dict
-):
+)-> dict:
     """
     -Esta función sirve para añadir un usuario-
     
