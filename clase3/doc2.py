@@ -1,4 +1,10 @@
 def palabra(
     x:str
 )-> dict:
-    palabra.split()
+    x = palabra.split()
+    print(x)
+    
+    dicc = {}
+    dicc.update(x)
+    
+print("Hola buenas noches")
