@@ -2,12 +2,12 @@ import datetime
 def agregar_usuario(
     diccionario:dict
 )-> dict:
-    x = input("Desea agregar un nuevo usuario (si/no):")
+    x = input("¿Desea agregar un nuevo usuario? (si/no):")
     y = x.lower()
     if y == "si":
         
         nom = input("Ingrese su nombre: ")
-        nom = nom.lower()
+        n = nom.lower()
         lib =  input("Ingrese su libro: ")
         estado = input("Estado:")
         fecha_pres =  input("Ingrese fecha de prestamo:")
@@ -18,36 +18,46 @@ def agregar_usuario(
         }
     else: 
         print("No desea añadir ningun usuario")
-    if diccionario.get(nom) != None:
-        diccionario[nom].append(diccionario_int)
+    if diccionario.get(n) != None:
+        diccionario[n].append(diccionario_int)
     else:
-        diccionario[nom] = [diccionario_int]
+        diccionario[n] = [diccionario_int]
     print(diccionario)
     
 def eliminar_usuario(
     diccionario:dict
 )-> dict:
-    x = input("Desea eliminar un usuario (si/no):")
+    x = input("¿Desea eliminar un usuario? (si/no):")
     y = x.lower()
     if y == "si":
         nom = input("Que usuario desea eliminar: ")
-        nom = nom.lower()
-        del diccionario[nom]
+        n = nom.lower()
+        del diccionario[n]
     else: 
         print("No desea eliminar ningun usuario")
     print(diccionario)
 
+def modificar_usuario(
+    diccionario:dict
+)-> dict:
+    x = input("¿Desea modificar un usuario? (si/no):")
+    y = x.lower()
+    if y == "si":
+        modi = input("¿Que usuario desea modificar?")
+    
+
 def visualizar_usuario(
     diccionario:dict
     )-> dict:
-    x = input("Desea visulizar un usuario (si/no):")
+    x = input("¿Desea visulizar un usuario? (si/no):")
     y = x.lower()
     if y == "si":
         for i in diccionario.items():
-            acc = input("Desea visulizar un usuario en especifico (si/no):")
+            acc = input("¿Desea visulizar un usuario en especifico? (si/no):")
             if acc == "si":
                 mostrar = input("Que usuario desea ver:")
-                z = diccionario.get(mostrar)
+                m = mostrar.lower()
+                z = diccionario.get(m)
                 print(z)
                 break
             else:

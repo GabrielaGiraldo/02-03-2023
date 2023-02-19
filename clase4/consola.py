@@ -18,7 +18,7 @@ def consola(prestamo):
             case "2":
                 print(eliminar_usuario(prestamo))
             case "3":
-                pass
+                print(modificar_usuario(prestamo))
             case "4":
                 print(visualizar_usuario(prestamo))
             case "x":
