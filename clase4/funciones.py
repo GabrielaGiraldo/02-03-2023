@@ -44,6 +44,15 @@ def modificar_usuario(
     y = x.lower()
     if y == "si":
         modi = input("¿Que usuario desea modificar?")
+        mod = modi.lower()
+        lib =  input("Ingrese su libro: ")
+        estado = input("Estado:")
+        fecha_pres =  input("Ingrese fecha de prestamo:")
+        diccionario.get(mod)
+        diccionario["libro"] = lib
+        diccionario["estado"] = estado
+        diccionario["fecha"] = fecha_pres
+        print(diccionario) 
     
 
 def visualizar_usuario(
