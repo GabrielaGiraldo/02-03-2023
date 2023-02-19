@@ -47,8 +47,11 @@ def visualizar_usuario(
             acc = input("Desea visulizar un usuario en especifico (si/no):")
             if acc == "si":
                 mostrar = input("Que usuario desea ver:")
-                diccionario.get(mostrar)
+                z = diccionario.get(mostrar)
+                print(z)
+                break
             else:
-                print(i)
+                print(diccionario)
+                break
                 
     
