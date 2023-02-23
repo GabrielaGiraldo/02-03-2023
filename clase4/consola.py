@@ -1,5 +1,7 @@
-from funciones import *
-from modificar_usuario import mod_usuario
+from agregar import agregar_usuario
+from ver import visualizar_usuario
+from eliminar import eliminar_usuario
+from modificar_usuario import modificar_usuario
 def consola(prestamo):
     
     while True:
@@ -19,7 +21,7 @@ def consola(prestamo):
             case "2":
                 print(eliminar_usuario(prestamo))
             case "3":
-                print(mod_usuario(prestamo))
+                print(modificar_usuario(prestamo))
             case "4":
                 print(visualizar_usuario(prestamo))
             case "x":

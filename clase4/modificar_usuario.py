@@ -1,20 +1,17 @@
-def mod_usuario(
+def modificar_usuario(
     diccionario:dict
 )-> dict:
-    x = input("¿Desea modificar algun usuario? (si/no): ")
+    x = input("¿Desea modificar un usuario? (si/no):")
     y = x.lower()
     if y == "si":
-        nom = input("Nombre del usuario:")
-        n = nom.lower()
-        lib = input("Nombre del libro:")
-        fecha = input("Fecha de prestamo:")
-        est = input("Estado")
-        dicc_int = {
-            
-            "libro":lib,
-            "fecha":fecha,
-            "estado":est
-            
-        }
-        diccionario[n].append(dicc_int)
+        modi = input("¿Que usuario desea modificar?")
+        mod = modi.lower()
+        diccionario.get(mod)
+        lib =  input("Ingrese su libro: ")
+        estado = input("Estado:")
+        fecha_pres =  input("Ingrese fecha de prestamo:")
+        diccionario["libro"] = lib
+        diccionario["estado"] = estado
+        diccionario["fecha"] = fecha_pres
+        print(diccionario) 
     

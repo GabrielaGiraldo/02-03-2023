@@ -1,4 +1,3 @@
-import datetime
 def agregar_usuario(
     diccionario:dict
 )-> dict:
