@@ -14,4 +14,3 @@ def modificar_usuario(
         diccionario["estado"] = estado
         diccionario["fecha"] = fecha_pres
         print(diccionario) 
-    
