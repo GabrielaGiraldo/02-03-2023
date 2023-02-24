@@ -11,7 +11,7 @@ def agregar_usuario(
         n = nom.lower()
         lib =  input("Ingrese su libro: ")
         estado = input("Estado:")
-        fecha_pres =  input(f"l fecha de prestamo es {date.today()}")
+        fecha_pres = (f"l fecha de prestamo es {date.today()}")
     
         diccionario_int = {
             "libro":lib,

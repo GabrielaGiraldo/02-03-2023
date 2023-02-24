@@ -1,4 +1,4 @@
-from agregar import agregar_usuario
+from agregar import *
 from ver import visualizar_usuario
 from eliminar import eliminar_usuario
 from modificar_usuario import modificar_usuario
