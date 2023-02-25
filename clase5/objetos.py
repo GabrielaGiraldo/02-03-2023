@@ -1,7 +1,8 @@
 class personas():
-    libros = {}
+    #libros = {}
     def __init__(self,nombre):
         self.nombre = nombre
+        self.libros = {}
     def agregar(self,nom_libro,fecha):
         self.libros.update({nom_libro:fecha})
 
@@ -11,7 +12,7 @@ print(p1.libros)
 p1.agregar("python","24/02/2023")
 p1.agregar("java","25/02/2023")
 
-p2.agregar("python","24/02/2023")
-p2.agregar("java","25/02/2023")
+p2.agregar("docker","24/02/2023")
+p2.agregar("aws","25/02/2023")
 print(p1.libros)
 print(p2.libros)
