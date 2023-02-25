@@ -13,4 +13,5 @@ p1.agregar("java","25/02/2023")
 
 p2.agregar("python","24/02/2023")
 p2.agregar("java","25/02/2023")
+print(p1.libros)
 print(p2.libros)
