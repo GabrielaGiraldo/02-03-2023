@@ -1,0 +1,1 @@
+init siempre es el primero en iniciar y el que se va a ejecutar inmediatamente.
