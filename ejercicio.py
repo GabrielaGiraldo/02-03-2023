@@ -1,8 +1,10 @@
 class Robot():
-    x = 0
-    y = 0
-    def __init__(self,nom):
+    #x = 0
+    #y = 0
+    def __init__(self,nom,x,y):
         self.nom = nom
+        self.x = x
+        self.y = y
     def arriba(self):
         g = int(input("Cuantos espacios quiere subir:"))
         self.y = self.y + g
@@ -16,7 +18,7 @@ class Robot():
         g = int(input("Cuantos espacios quiere moverse a la derecha:"))
         self.x = self.x + g
     def posicion(self):
-        print(f"Esta en la posición ({self.x},{self.y})")
+        print(f"{self.nom} esta en la posición ({self.x},{self.y})")
 
 bot = Robot("Karolai")
 bot.arriba()
