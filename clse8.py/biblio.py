@@ -1,14 +1,14 @@
 class Persona():
     
-    def __init__(self,ID,nombre):
-        self.ID = ID
-        self.nombre = nombre
+    def __init__(self):
+        self.ID = int(input("Ingrese su ID:"))
+        self.nombre = input("Ingrese su nombre")  
         self.info = {
             "ID":self.ID,
             "Nombre":self.nombre,
             "Libros":
                 {
-                    "ID":ID,
+                    "ID":self.ID,
                     "Info":{}
                     
                     }
